@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda | Sherly C. Maharani</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    .fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+    .fade-in-right { animation: fadeInRight 1s ease-out forwards; }
+  </style>
+</head>
+<body class="bg-[#f8f9fb] text-gray-800">
+
+  <section class="relative h-screen overflow-hidden flex items-center px-6">
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="vidio/22.mp4" type="video/mp4" />
+    Browser kamu tidak mendukung video background.
+  </video>
+
+  <!-- Overlay (untuk gelapkan sedikit biar teks terlihat) -->
+  <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10"></div>
+
+  <!-- Konten (Teks + Gambar) -->
+  <div class="relative z-20 max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start w-full">
+    <div class="pt-16 text-white">
+      <p class="text-red-400 text-sm md:text-base font-semibold tracking-wider mb-3 opacity-0 translate-y-6 fade-in-up" style="animation-delay: 0.2s;">
+        PERKENALKAN SAYA  
+      </p>
+      <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-6 opacity-0 translate-y-6 fade-in-up" style="animation-delay: 0.4s;">
+        Sherly Calista Maharani. <br />Sistem Informasi
+      </h1>
+      <p class="text-lg text-gray-200 mb-8 max-w-md opacity-0 translate-y-6 fade-in-up" style="animation-delay: 0.6s;">
+        Halo! Saya Sherly Calista Maharani, mahasiswa Sistem Informasi dari Universitas Mitra Indonesia.
+        Saya senang mengeksplorasi dunia teknologi, terutama dalam bidang desain dan pengembangan web.
+        Bagi saya, teknologi bukan sekadar alat, tapi cara untuk memecahkan masalah nyata dan menciptakan dampak positif.
+      </p>
+      <div class="flex gap-4 opacity-0 translate-y-6 fade-in-up" style="animation-delay: 0.8s;">
+        <a href="about/index.html" class="bg-red-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-600 transition">
+          Tentang Saya
+        </a>
+        <a href="contact/index.html" class="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition">
+          Hubungi Saya
+        </a>
+      </div>
+    </div>
+
+    <div class="flex justify-center -mt-40 opacity-0 fade-in-right" style="animation-delay: 1s;">
+      <img src="img/s.png" alt="sherly" class="w-[400px] md:w-[500px]" />
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

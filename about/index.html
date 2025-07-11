@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Sherly Calista Maharani</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Transisi masuk (fade-in-up) */
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#fff1f3] text-gray-800">
+
+  <!-- Tombol Kembali -->
+  <div class="px-6 pt-6">
+    <a href="/index.html" class="inline-block bg-pink-400 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-pink-500 transition">
+      ← Kembali 
+    </a>
+  </div>
+
+  <section class="py-16 px-6 fade-in-up">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+
+      <!-- LEFT SIDE -->
+      <div class="bg-white p-6 shadow-xl rounded-xl flex flex-col items-center text-center transition duration-300 hover:shadow-2xl fade-in-up">
+        <img src="about/2.jpg" alt="Sherly" class="w-32 h-32 object-cover rounded-full mb-4 ring-4 ring-pink-500" />
+        <h2 class="text-2xl font-bold text-pink-600">Sherly Calista Maharani</h2>
+        <p class="text-sm text-gray-500">Mahasiswa Sistem Informasi</p>
+        <div class="mt-6 space-y-4 text-left w-full text-sm text-gray-700">
+          <div class="flex items-center gap-3">
+            <span class="font-semibold w-20">Email:</span>
+            <span>sherly@gmail.com</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="font-semibold w-20">Telepon:</span>
+            <span>+62 8636373637363</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="font-semibold w-20">Alamat:</span>
+            <span>Bandar Lampung, Indonesia</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="md:col-span-2 space-y-10">
+
+        <!-- Tentang Saya -->
+        <div class="fade-in-up" style="animation-delay: 0.3s; animation-fill-mode: both;">
+          <h3 class="text-3xl font-bold mb-4 text-pink-600">Tentang Saya</h3>
+          <p class="text-gray-700 leading-relaxed text-justify">
+            Halo! Saya Sherly Calista Maharani, mahasiswa Sistem Informasi dari Universitas Mitra Indonesia. Saya senang mengeksplorasi dunia teknologi, terutama dalam bidang desain dan pengembangan web. 
+            Bagi saya, teknologi bukan sekadar alat, tapi cara untuk memecahkan masalah nyata dan menciptakan dampak positif dalam kehidupan sehari-hari.
+          </p>
+        </div>
+
+        <!-- Keahlian Saya -->
+        <div class="fade-in-up" style="animation-delay: 0.6s; animation-fill-mode: both;">
+          <h3 class="text-2xl font-bold mb-4 text-pink-600">Keahlian Saya</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white shadow-md p-5 rounded-lg hover:shadow-lg transition duration-300">
+              <h4 class="font-semibold text-lg mb-2 text-pink-500">Web Design</h4>
+              <p class="text-sm text-gray-600">Desain website yang modern, bersih, dan responsif.</p>
+            </div>
+            <div class="bg-white shadow-md p-5 rounded-lg hover:shadow-lg transition duration-300">
+              <h4 class="font-semibold text-lg mb-2 text-pink-500">Web Development</h4>
+              <p class="text-sm text-gray-600">Pengembangan menggunakan HTML, CSS, JavaScript, dan Tailwind.</p>
+            </div>
+            <div class="bg-white shadow-md p-5 rounded-lg hover:shadow-lg transition duration-300">
+              <h4 class="font-semibold text-lg mb-2 text-pink-500">UI/UX Design</h4>
+              <p class="text-sm text-gray-600">Tampilan & pengalaman pengguna yang nyaman & intuitif.</p>
+            </div>
+            <div class="bg-white shadow-md p-5 rounded-lg hover:shadow-lg transition duration-300">
+              <h4 class="font-semibold text-lg mb-2 text-pink-500">Graphic Design</h4>
+              <p class="text-sm text-gray-600">Desain visual untuk sosial media, poster, dan branding.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
